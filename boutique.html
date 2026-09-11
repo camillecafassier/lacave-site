@@ -3,7 +3,77 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Boutique — La Cave · Sainte-Maure-de-Touraine</title>
+  <title>Boutique en Ligne — La Cave | Vins, Champagnes, Bières, Spiritueux | Livraison France</title>
+
+  <!-- ═══ SEO ═══ -->
+  <meta name="description" content="Commandez vos vins, champagnes, bières artisanales et spiritueux en ligne. Caviste La Cave à Sainte-Maure-de-Touraine. Livraison France & DOM. Click & Collect disponible."/>
+  <meta name="keywords" content="acheter vins en ligne, commande champagne, vins Loire livraison, bières artisanales commande, click and collect caviste Touraine, boutique vins 37"/>
+  <meta name="author" content="La Cave — Sainte-Maure-de-Touraine"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#111830"/>
+  <link rel="canonical" href="https://camillecafassier.github.io/lacave-site/boutique.html"/>
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="La Cave — Sainte-Maure-de-Touraine"/>
+  <meta property="og:title" content="Boutique La Cave — Vins & Spiritueux en Ligne"/>
+  <meta property="og:description" content="Commandez vos vins, champagnes, bières et spiritueux. Livraison France & DOM. Click & Collect à Sainte-Maure-de-Touraine."/>
+  <meta property="og:url" content="https://camillecafassier.github.io/lacave-site/boutique.html"/>
+  <meta property="og:image" content="https://camillecafassier.github.io/lacave-site/og-image.jpg"/>
+  <meta property="og:locale" content="fr_FR"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Boutique La Cave — Vins & Spiritueux en Ligne"/>
+  <meta name="twitter:description" content="Commandez vos vins, champagnes, bières et spiritueux. Livraison France & DOM. Click & Collect à Sainte-Maure-de-Touraine."/>
+  <meta name="twitter:image" content="https://camillecafassier.github.io/lacave-site/og-image.jpg"/>
+
+  <!-- Structured Data (Google) -->
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "LiquorStore",
+      "name": "La Cave",
+      "description": "Caviste indépendant et négociant en vins, champagnes, bières artisanales et spiritueux à Sainte-Maure-de-Touraine.",
+      "url": "https://camillecafassier.github.io/lacave-site/",
+      "telephone": "+33247409893",
+      "email": "contact@lacave-saintemaure.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "29 Route de Sepmes",
+        "addressLocality": "Sainte-Maure-de-Touraine",
+        "postalCode": "37800",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.1003,
+        "longitude": 0.7136
+      },
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"09:30","closes":"13:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"15:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:30","closes":"13:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"15:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:30","closes":"13:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"15:00","closes":"19:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:30","closes":"13:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"15:00","closes":"19:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"13:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"15:00","closes":"19:00"}
+      ],
+      "sameAs": [
+        "https://www.instagram.com/lacavesaintemaure",
+        "https://www.facebook.com/lacavesaintemaure"
+      ],
+      "priceRange": "€€",
+      "servesCuisine": "Wine Bar",
+      "hasMap": "https://maps.google.com/?q=29+Route+de+Sepmes+37800+Sainte-Maure-de-Touraine",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer"
+    }
+  </script>
+  <!-- ═══════════ -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -105,6 +175,24 @@
     @media(max-width:480px){
       .products-grid{grid-template-columns:1fr}
     }
+  
+    .nav-boutique-btn {
+      display: inline-flex; align-items: center;
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--navy-deep, #111830);
+      background: #c8a84b;
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: background 0.3s, transform 0.2s;
+      white-space: nowrap;
+    }
+    .nav-boutique-btn:hover {
+      background: #e0c070;
+      transform: translateY(-1px);
+    }
+    
   </style>
 </head>
 <body>
@@ -115,8 +203,6 @@
       <li><a href="index.html">Accueil</a></li>
       <li><a href="histoire.html">Qui sommes-nous</a></li>
       <li><a href="professionnels.html">Professionnels</a></li>
-      <li><a href="boutique.html" class="active">Boutique</a></li>
-      <li><a href="boutique.html" class="active">Boutique</a></li>
       <li><a href="galerie.html">Galerie</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -124,6 +210,11 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       Panier <span class="cart-count">0</span>
     </div>
+  
+    <a href="boutique.html" class="nav-boutique-btn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-1px;margin-right:5px"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      Boutique
+    </a>
   </nav>
 
   <div class="age-banner">
@@ -131,7 +222,7 @@
   </div>
 
   <div class="shop-header">
-    <h1>Notre <em>Boutique</em></h1>
+    <h1>Notre <em>La Cave en ligne</em></h1>
     <p>Vins · Champagnes · Bières Artisanales · Spiritueux &nbsp;—&nbsp; Livraison France & DOM · Click & Collect à Sainte-Maure-de-Touraine</p>
   </div>
 
