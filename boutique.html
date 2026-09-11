@@ -6,7 +6,7 @@
   <title>Boutique en Ligne — La Cave | Vins, Champagnes, Bières, Spiritueux | Livraison France</title>
 
   <!-- ═══ SEO ═══ -->
-  <meta name="description" content="Commandez vos vins, champagnes, bières artisanales et spiritueux en ligne. Caviste La Cave à Sainte-Maure-de-Touraine. Livraison France métropolitaine. Click & Collect disponible."/>
+  <meta name="description" content="Commandez vos vins, champagnes, bières artisanales et spiritueux en ligne. Caviste La Cave à Sainte-Maure-de-Touraine. Livraison France & DOM. Click & Collect disponible."/>
   <meta name="keywords" content="acheter vins en ligne, commande champagne, vins Loire livraison, bières artisanales commande, click and collect caviste Touraine, boutique vins 37"/>
   <meta name="author" content="La Cave — Sainte-Maure-de-Touraine"/>
   <meta name="robots" content="index, follow"/>
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="La Cave — Sainte-Maure-de-Touraine"/>
   <meta property="og:title" content="Boutique La Cave — Vins & Spiritueux en Ligne"/>
-  <meta property="og:description" content="Commandez vos vins, champagnes, bières et spiritueux. Livraison France métropolitaine. Click & Collect à Sainte-Maure-de-Touraine."/>
+  <meta property="og:description" content="Commandez vos vins, champagnes, bières et spiritueux. Livraison France & DOM. Click & Collect à Sainte-Maure-de-Touraine."/>
   <meta property="og:url" content="https://camillecafassier.github.io/lacave-site/boutique.html"/>
   <meta property="og:image" content="https://camillecafassier.github.io/lacave-site/og-image.jpg"/>
   <meta property="og:locale" content="fr_FR"/>
@@ -25,7 +25,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Boutique La Cave — Vins & Spiritueux en Ligne"/>
-  <meta name="twitter:description" content="Commandez vos vins, champagnes, bières et spiritueux. Livraison France métropolitaine. Click & Collect à Sainte-Maure-de-Touraine."/>
+  <meta name="twitter:description" content="Commandez vos vins, champagnes, bières et spiritueux. Livraison France & DOM. Click & Collect à Sainte-Maure-de-Touraine."/>
   <meta name="twitter:image" content="https://camillecafassier.github.io/lacave-site/og-image.jpg"/>
 
   <!-- Structured Data (Google) -->
@@ -102,22 +102,9 @@
     .shop-header h1 em{font-style:italic;color:var(--gold)}
     .shop-header p{font-size:0.85rem;font-weight:300;color:var(--text-muted);margin-top:0.5rem}
 
-    .shop-layout{display:flex;flex-direction:column;min-height:80vh}
+    .shop-layout{display:grid;grid-template-columns:250px 1fr;min-height:80vh}
 
-    
-    .sidebar {
-      background: var(--navy);
-      padding: 1rem 2rem;
-      border-bottom: 1px solid rgba(200,168,75,0.1);
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 65px;
-      z-index: 10;
-    }
-    
+    .sidebar{background:var(--navy);padding:2.5rem 1.5rem;border-right:1px solid rgba(200,168,75,0.1);position:sticky;top:65px;height:fit-content}
     .sidebar-title{font-size:0.62rem;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
     .filter-group{margin-bottom:2rem}
     .filter-group-title{font-size:0.63rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.8rem;font-weight:500}
@@ -137,7 +124,7 @@
     .pro-banner p{font-size:0.72rem;color:var(--text-muted);line-height:1.6;margin-bottom:0.8rem}
     .pro-banner a{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(200,168,75,0.4)}
 
-    .products-area { padding: 2.5rem 3rem; }
+    .products-area{padding:2.5rem 3rem}
     .products-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid rgba(200,168,75,0.1)}
     .products-count{font-size:0.8rem;font-weight:300;color:var(--text-muted)}
     .products-sort{background:var(--navy);border:1px solid rgba(200,168,75,0.2);color:var(--cream);font-family:'Raleway',sans-serif;font-size:0.75rem;padding:0.4rem 0.8rem;outline:none;cursor:pointer}
@@ -181,7 +168,7 @@
       .age-banner{padding:0.6rem 1.2rem;font-size:0.65rem}
       .shop-layout{grid-template-columns:1fr}
       .sidebar{position:static;border-right:none;border-bottom:1px solid rgba(200,168,75,0.1)}
-      .products-area { padding: 2.5rem 3rem; }
+      .products-area{padding:2rem 1.5rem}
       .products-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
       footer{flex-direction:column;text-align:center;padding:2rem 1.5rem}
     }
@@ -206,94 +193,13 @@
       transform: translateY(-1px);
     }
     
-  
-    /* ── BURGER MOBILE ── */
-    .burger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 0.4rem;
-      background: none;
-      border: none;
-      margin-left: 0.8rem;
-      z-index: 600;
-    }
-    .burger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: #f5f0e8;
-      transition: all 0.3s ease;
-      transform-origin: center;
-    }
-    .burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-    .burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-
-    @media (max-width: 768px) {
-      .burger { display: flex !important; }
-      .nav-links {
-        display: none !important;
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
-        background: rgba(17,24,48,0.98);
-        backdrop-filter: blur(16px);
-        z-index: 599;
-        gap: 0 !important;
-        padding: 2rem;
-      }
-      .nav-links.open {
-        display: flex !important;
-        animation: menuOpen 0.3s ease both;
-      }
-      @keyframes menuOpen {
-        from { opacity: 0; transform: translateY(-10px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-      .nav-links a {
-        font-size: 1.1rem !important;
-        letter-spacing: 0.2em !important;
-        padding: 1rem 2rem !important;
-        color: rgba(255,255,255,0.8) !important;
-        border-bottom: 1px solid rgba(200,168,75,0.1) !important;
-        width: 100%;
-        text-align: center;
-      }
-      .nav-links a:hover, .nav-links a.active {
-        color: #c8a84b !important;
-        background: rgba(200,168,75,0.05);
-      }
-      .nav-links a::after { display: none !important; }
-      .nav-boutique-btn {
-        margin: 1.5rem auto 0 !important;
-        font-size: 0.8rem !important;
-        padding: 0.8rem 2rem !important;
-      }
-      .nav-socials { display: none; }
-    }
-
-  
-    @media (max-width: 768px) {
-      .sidebar { padding: 0.8rem 1rem; gap: 0.8rem; top: 60px; }
-      .sidebar select { font-size: 0.65rem !important; }
-      .products-area { padding: 1.5rem 1rem !important; }
-      .products-grid { grid-template-columns: repeat(2,1fr) !important; gap: 0.8rem !important; }
-    }
-    @media (max-width: 420px) {
-      .products-grid { grid-template-columns: 1fr !important; }
-    }
-
   </style>
 </head>
 <body>
 
   <nav>
     <a href="index.html" class="nav-logo"><img src="data:image/png;base64,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" alt="La Cave"/></a>
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="histoire.html">Qui sommes-nous</a></li>
       <li><a href="professionnels.html">Professionnels</a></li>
@@ -309,10 +215,6 @@
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-1px;margin-right:5px"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       Boutique
     </a>
-  
-    <button class="burger" id="burger" aria-label="Menu" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
   </nav>
 
   <div class="age-banner">
@@ -321,55 +223,81 @@
 
   <div class="shop-header">
     <h1>Notre <em>La Cave en ligne</em></h1>
-    <p>Vins · Champagnes · Bières Artisanales · Spiritueux &nbsp;—&nbsp; Livraison France métropolitaine · Click & Collect à Sainte-Maure-de-Touraine</p>
+    <p>Vins · Champagnes · Bières Artisanales · Spiritueux &nbsp;—&nbsp; Livraison France & DOM · Click & Collect à Sainte-Maure-de-Touraine</p>
   </div>
 
   <div class="shop-layout">
     <aside class="sidebar">
-      <div style="font-size:0.62rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap">Filtrer :</div>
+      <p class="sidebar-title">Filtrer par</p>
 
-      <select class="products-sort" style="font-size:0.7rem;padding:0.35rem 0.7rem;">
-        <option value="">🍷 Toutes catégories</option>
-        <option>Vins Rouges</option>
-        <option>Vins Blancs</option>
-        <option>Vins Rosés</option>
-        <option>Champagnes</option>
-        <option>Bières Artisanales</option>
-        <option>Spiritueux</option>
-      </select>
-
-      <select class="products-sort" style="font-size:0.7rem;padding:0.35rem 0.7rem;">
-        <option value="">📍 Toutes régions</option>
-        <option>Loire</option>
-        <option>Champagne</option>
-        <option>Bordeaux</option>
-        <option>Bourgogne</option>
-        <option>Rhône</option>
-      </select>
-
-      <div style="display:flex;align-items:center;gap:0.5rem;">
-        <input type="number" placeholder="Min €" style="width:70px;background:var(--navy-deep);border:1px solid rgba(200,168,75,0.2);color:var(--cream);font-family:'Raleway',sans-serif;font-size:0.7rem;padding:0.35rem 0.5rem;outline:none;" />
-        <span style="color:var(--text-muted);font-size:0.8rem">—</span>
-        <input type="number" placeholder="Max €" style="width:70px;background:var(--navy-deep);border:1px solid rgba(200,168,75,0.2);color:var(--cream);font-family:'Raleway',sans-serif;font-size:0.7rem;padding:0.35rem 0.5rem;outline:none;" />
+      <div class="filter-group">
+        <p class="filter-group-title">Catégorie</p>
+        <div class="filter-cat active" onclick="setActive(this)">Tous les produits <span>68</span></div>
+        <div class="filter-cat" onclick="setActive(this)">🍷 Vins <span>32</span></div>
+        <div class="filter-sub">
+          <div class="filter-sub-item">Rouges (18)</div>
+          <div class="filter-sub-item">Blancs (9)</div>
+          <div class="filter-sub-item">Rosés (3)</div>
+          <div class="filter-sub-item">Pétillants (2)</div>
+        </div>
+        <div class="filter-cat" onclick="setActive(this)">🥂 Champagnes <span>15</span></div>
+        <div class="filter-sub">
+          <div class="filter-sub-item">Brut (8)</div>
+          <div class="filter-sub-item">Blanc de Blancs (3)</div>
+          <div class="filter-sub-item">Rosé (2)</div>
+          <div class="filter-sub-item">Millésimé (2)</div>
+        </div>
+        <div class="filter-cat" onclick="setActive(this)">🍺 Bières <span>12</span></div>
+        <div class="filter-cat" onclick="setActive(this)">🥃 Spiritueux <span>9</span></div>
       </div>
 
-      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-        <button onclick="this.style.background=this.style.background?'':'rgba(200,168,75,0.15)'" style="background:none;border:1px solid rgba(200,168,75,0.25);color:var(--text-muted);font-family:'Raleway',sans-serif;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.3rem 0.7rem;cursor:pointer;transition:all 0.2s">🌿 Bio</button>
-        <button onclick="this.style.background=this.style.background?'':'rgba(200,168,75,0.15)'" style="background:none;border:1px solid rgba(200,168,75,0.25);color:var(--text-muted);font-family:'Raleway',sans-serif;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.3rem 0.7rem;cursor:pointer;transition:all 0.2s">⭐ Coups de cœur</button>
-        <button onclick="this.style.background=this.style.background?'':'rgba(200,168,75,0.15)'" style="background:none;border:1px solid rgba(200,168,75,0.25);color:var(--text-muted);font-family:'Raleway',sans-serif;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.3rem 0.7rem;cursor:pointer;transition:all 0.2s">🎁 Cadeaux</button>
+      <div class="filter-group">
+        <p class="filter-group-title">Prix</p>
+        <div class="price-inputs">
+          <input type="number" placeholder="Min" value="0"/> <span>—</span>
+          <input type="number" placeholder="Max" value="200"/>
+        </div>
+        <button class="filter-btn">Appliquer</button>
       </div>
 
-      <div style="margin-left:auto;">
-        <select class="products-sort" style="font-size:0.7rem;padding:0.35rem 0.7rem;">
+      <div class="filter-group">
+        <p class="filter-group-title">Région</p>
+        <div class="filter-sub" style="padding-left:0">
+          <div class="filter-sub-item">Loire (28)</div>
+          <div class="filter-sub-item">Champagne (15)</div>
+          <div class="filter-sub-item">Bordeaux (8)</div>
+          <div class="filter-sub-item">Bourgogne (6)</div>
+          <div class="filter-sub-item">Rhône (4)</div>
+          <div class="filter-sub-item">Autres (7)</div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <p class="filter-group-title">Options</p>
+        <div class="filter-sub" style="padding-left:0">
+          <div class="filter-sub-item">🌿 Bio / Nature</div>
+          <div class="filter-sub-item">⭐ Coups de cœur</div>
+          <div class="filter-sub-item">🎁 Idées cadeaux</div>
+        </div>
+      </div>
+
+      <div class="pro-banner">
+        <p>Vous êtes professionnel ? Connectez-vous pour voir vos <strong style="color:var(--gold)">tarifs pro</strong> et bénéficier de remises volume.</p>
+        <a href="contact.html">Créer un compte pro →</a>
+      </div>
+    </aside>
+
+    <main class="products-area">
+      <div class="products-toolbar">
+        <p class="products-count">68 produits</p>
+        <select class="products-sort">
           <option>Trier : Nouveautés</option>
           <option>Prix croissant</option>
           <option>Prix décroissant</option>
           <option>Millésime</option>
         </select>
       </div>
-    </aside>
 
-    <main class="products-area">
       <div class="products-grid">
 
         <div class="product-card">
@@ -482,34 +410,6 @@
       document.querySelectorAll('.filter-cat').forEach(c => c.classList.remove('active'));
       el.classList.add('active');
     }
-  
-    
-    function toggleMenu() {
-      const burger = document.getElementById('burger');
-      const navLinks = document.getElementById('navLinks');
-      burger.classList.toggle('open');
-      navLinks.classList.toggle('open');
-      document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
-    }
-    // Close menu on link click
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => {
-        document.getElementById('burger').classList.remove('open');
-        document.getElementById('navLinks').classList.remove('open');
-        document.body.style.overflow = '';
-      });
-    });
-    // Close on outside click
-    document.addEventListener('click', function(e) {
-      const nav = document.querySelector('nav');
-      const burger = document.getElementById('burger');
-      if (burger && !nav.contains(e.target) && document.getElementById('navLinks').classList.contains('open')) {
-        burger.classList.remove('open');
-        document.getElementById('navLinks').classList.remove('open');
-        document.body.style.overflow = '';
-      }
-    });
-
   </script>
 </body>
 </html>
